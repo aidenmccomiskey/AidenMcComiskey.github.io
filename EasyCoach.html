@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>EasyCoach</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Project Overviews</a></li>
+							<li class="active"><a href="EasyCoach.html">EasyCoach</a></li>
+							<li><a href="CV4.html">CV4 Page</a></li>
+							<li><a href="BCI.html">BCI Research</a></li>
+							<li><a href="UROV.html"> Underwater ROV</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>EasyCoach &mdash; Machine Learning Engineer</h1>
+									<p>Building the AI features that power a soccer coaching platform used by 400+ clubs worldwide.</p>
+								</header>
+
+								<hr />
+								<h2>Overview</h2>
+								<p>EasyCoach is a soccer coaching platform used by professional and amateur clubs including Villarreal CF to plan training sessions, manage drills, and develop players. I joined as a Machine Learning Engineer in May 2025 and have led the design and rollout of the platform's AI features, the supporting data infrastructure, and the production deploys that keep them running.</p>
+
+								<hr />
+								<h2>What I've Built</h2>
+								<ol>
+									<li>
+										<h5>AI Drill Search</h5>
+										Designed and shipped a hybrid retrieval system that lets coaches search the drill library in natural language ("possession drill for U12s, half-pitch, focus on transition"). It combines a small language-model step that interprets the query with six parallel ranking signals (vector similarity, lexical match, taxonomy match, and others), merged via Reciprocal Rank Fusion. Serves search across 418 club databases.
+									</li>
+									<li>
+										<h5>PostgreSQL Vector Database</h5>
+										Designed and stood up the company's vector database from scratch &mdash; PostgreSQL with the pgvector extension and HNSW indexing. It backs every AI feature on the platform, including the embedding pipeline that keeps drill content up to date and the per-tenant isolation that keeps each of the 418 clubs' data separate.
+									</li>
+									<li>
+										<h5>AI Autofill</h5>
+										Coaches can now describe a drill in a single sentence and have the platform generate the full thing &mdash; description, coaching points, equipment list, and age-appropriate adaptations. Built on GPT-4o with a custom post-generation pass that reconciles equipment mentions across text fields. Covered by a 62-test regression suite.
+									</li>
+									<li>
+										<h5>AI Diagram</h5>
+										Turns a natural-language drill description into a tactical diagram automatically. Three-stage pipeline: a language model extracts entities and movements, a custom layout engine (with 10 formation generators) positions players and equipment, and a canvas renderer produces the final image.
+									</li>
+									<li>
+										<h5>Drill Categorization at Scale</h5>
+										Built and deployed a machine-learning drill-categorization system using a custom soccer taxonomy. Now used by 150+ teams. Ran an enrichment pipeline that re-embedded 750+ drills with taxonomy-enriched text, materially improving search relevance.
+									</li>
+									<li>
+										<h5>YouTube Drill Ingestion</h5>
+										Built a pipeline that ingests soccer drills from YouTube, enriches them with metadata, auto-categorizes them with the taxonomy model, and shares them across tenants with deduplication &mdash; expanding the searchable library well beyond what any single club could produce.
+									</li>
+									<li>
+										<h5>Cross-Stack Data Sync</h5>
+										Implemented a dual-write sync layer between the legacy PHP backend and a new Node.js service, keeping the source-of-truth MariaDB and the PostgreSQL vector database consistent across all tenants whenever a drill is created or edited.
+									</li>
+									<li>
+										<h5>Production Ops</h5>
+										Own the production deploys and incident response for the AI coaching service running on AWS ECS.
+									</li>
+								</ol>
+
+								<hr />
+								<h2>Stack</h2>
+								<p>Node.js / Express, React, PHP (CodeIgniter), MariaDB, PostgreSQL with pgvector, AWS ECS, OpenAI &amp; Gemini APIs.</p>
+
+								<hr />
+								<h2>Links</h2>
+								<ul class="actions">
+									<li><a href="https://www.easycoach.club/" class="button.fit">Visit EasyCoach</a></li>
+								</ul>
+
+								<hr />
+
+							</section>
+
+					</div>
+
+			</div>
+			<footer id="footer">
+
+			</footer>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
