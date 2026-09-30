@@ -1,122 +1,93 @@
-<!DOCTYPE HTML>
-<!--
-    Massively by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-    <head>
-        <title>Underwater ROV Project</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    </head>
-    <body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Underwater ROV — Aiden McComiskey</title>
+	<meta name="description" content="Leading a team to the MATE ROV World Championships." />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
 
-        <!-- Wrapper -->
-            <div id="wrapper">
+	<header class="site-header">
+		<div class="wrap">
+			<div class="top">
+				<a class="site-name" href="index.html">Aiden McComiskey</a>
+				<div class="site-contact">
+					<a href="mailto:aidenjmccomiskey@gmail.com">Email</a>
+					<a href="https://github.com/AanAillen">GitHub</a>
+				</div>
+			</div>
+			<nav class="tabs" aria-label="Pages">
+				<a href="index.html">Overview</a>
+				<a href="CoreWeave.html">CoreWeave</a>
+				<a href="EasyCoach.html">EasyCoach</a>
+				<a href="CV4.html">CV4 Device</a>
+				<a href="BCI.html">BCI Research</a>
+				<a href="UROV.html" aria-current="page">Underwater ROV</a>
+				<a href="Telescope.html">Telescope Plate</a>
+			</nav>
+		</div>
+	</header>
 
-                <!-- Header -->
-                    <header id="header">
-                    </header>
+	<main>
+		<div class="wrap">
+			<section class="page-title">
+				<h1>Underwater ROV</h1>
+				<p class="sub">From a no-budget middle-school club to the MATE World Championships.</p>
+			</section>
 
-                <!-- Nav -->
-                    <nav id="nav">
-                        <ul class="links">
-                            <li><a href="index.html">Project Overviews</a></li>
-                            <li><a href="CoreWeave.html">CoreWeave</a></li>
-                            <li><a href="EasyCoach.html">EasyCoach</a></li>
-                            <li><a href="CV4.html">CV4 Page</a></li>
-                            <li><a href="BCI.html">BCI Research</a></li>
-                            <li class="active"><a href="UROV.html">Underwater ROV</a></li>
-                        </ul>
-                    </nav>
+			<dl class="summary">
+				<div><dt>Role</dt><dd>Team lead and designer</dd></div>
+				<div><dt>Team</dt><dd>6 people</dd></div>
+				<div><dt>Dates</dt><dd>2017 &ndash; 2023</dd></div>
+				<div><dt>Result</dt><dd>1st, New England (Navigators); MATE Worlds</dd></div>
+			</dl>
 
-                <!-- Main -->
-                    <div id="main">
+			<article class="article">
+				<section>
+					<h2>Background</h2>
+					<p>I joined an underwater robotics club in middle school with no budget: we built our first ROV from old bilge pumps and kitchen tongs. In high school I got the club recognised as an academic course, which later became the school&rsquo;s most popular minor.</p>
+					<p>Leading a team of 6, I helped design and build an ROV that won 1st place in the Navigators Division of the New England regional and competed at the <strong>MATE World Championships</strong>.</p>
+					<figure><img src="images/Poster.png" alt="ROV project poster" loading="lazy" /><figcaption>Project poster</figcaption></figure>
+				</section>
 
-                        <!-- Post -->
-                            <section class="post">
-                                <header class="major">
-                                    <h1>Underwater <br> Remotely Operated Vehicle (UROV)</h1>
-                                </header>
-                                <hr />
+				<section>
+					<h2>My role</h2>
+					<p>As team lead I split the team into groups, set milestones for regional and international competitions, and presented our work to judges and industry professionals. I also led much of the engineering:</p>
+					<ul class="list">
+						<li><h3>Frame</h3><p>Designed and 3D-printed a lightweight, modular frame from PLA and our own PET filament made from recycled bottles. It switches between a high-payload setup and a lightweight, high-speed configuration.</p></li>
+						<li><h3>Thrusters</h3><p>Designed custom thrusters that cut power use, improved manoeuvrability, and brought the cost from $200 to $20 each.</p></li>
+						<li><h3>Robotic arm</h3><p>Used generative design to cut the arm&rsquo;s weight while keeping its strength.</p></li>
+						<li><h3>Electronics</h3><p>Supervised integration of power, control boards, and waterproofing. An onboard Raspberry Pi with a custom tether handles two-way communication, driven by an Xbox controller; a Pixhawk running ArduSub provides auto-levelling.</p></li>
+					</ul>
+				</section>
 
-                                <!-- Introduction -->
-                                <h2>How It Began</h2>
-                                <p>I first joined an underwater robotics club in middle school, focused on building and testing underwater ROVs.  The challenge?  We had no budget.  We used everything from old bilge pumps to kitchen tongs, and pieced together a mostly-functional robot.  I became really passionate about the project and wanted to take it further. In high school, I worked to get the club officially recognized as an academic course, which later became the school's most popular minor.</p>
-                                <p>Leading a team of 6, I helped design and build an advanced UROV that competed at the <strong>MATE World Championships</strong> after succeeding in regionals.
-								<hr />
+				<section>
+					<h2>Photos</h2>
+					<div class="figs">
+						<figure><img src="images/Aquabot.jpeg" alt="Modular 3D-printed ROV frame" loading="lazy" /><figcaption>3D-printed frame</figcaption></figure>
+						<figure><img src="images/CustomMotor.JPG" alt="Custom-built ROV thruster" loading="lazy" /><figcaption>Custom thruster</figcaption></figure>
+						<figure><img src="images/GenArm.jpg" alt="Generatively designed robotic arm" loading="lazy" /><figcaption>Generatively designed arm</figcaption></figure>
+					</div>
+				</section>
+			</article>
+			<nav class="pager" aria-label="Pages">
+				<a href="BCI.html">&larr; BCI Research</a>
+				<a href="Telescope.html">Telescope Plate &rarr;</a>
+			</nav>
+		</div>
+	</main>
 
-								<h2>Project Overview</h2>
-								<span class="image fit"><img src="images/Poster.png" alt="UROV Project Poster" /></span>
-								
-								<hr />
-                                <!-- Contributions -->
-                                <h2>My Role in the Project</h2>
-								As the team lead, I was chosen to act as the "company CEO", responsible for coordinating the team.  This involved dividing the team into groups, setting  milestones and deadlines to keep the project on track for regional and international competitions, and presenting our work to judges and industry professionals at competitions.<br>
-								 However, my role wasn’t limited to leadership—I was deeply involved in the design and engineering of the UROV:
-                                <ul>
-                                    <li><strong>Frame Design:</strong> Created and 3D-printed the custom UROV frame, balancing hydrodynamics, weight, and structural integrity.</li>
-                                    <li><strong>Custom Thrusters:</strong> Designed and built thrusters optimized for precise underwater movement and efficiency.</li>
-                                    <li><strong>Robotic Arm:</strong> Developed and implemented a generatively designed robotic arm, ensuring maximum strength while minimizing weight.</li>
-                                    <li><strong>Electronics and Integration:</strong> Supervised and integrated the power systems, control boards, and waterproofed connections.</li>
-                                </ul>
+	<footer class="site-footer">
+		<div class="wrap">
+			<span>&copy; 2026 Aiden McComiskey</span>
+			<a href="mailto:aidenjmccomiskey@gmail.com">aidenjmccomiskey@gmail.com</a>
+		</div>
+	</footer>
 
-                                <hr />
-
-                                <!-- Technical Achievements -->
-                                <h2>Engineering Highlights</h2>
-                                <div class="row">
-                                    <div class="col-6 col-12-small">
-                                        <span class="image fit"><img src="images/Aquabot.jpeg" alt="UROV Frame Design" /></span>
-                                        <h4>3D-Printed Frame</h4>
-                                        <p>Designe a 3D printed, lightweight, modular frame.  Each piece was printed from either PLA or our homemade PET filament (made from recycled water bottles).  Its modular design allows for quick attachment of components, and switching between a high-payload setup, and a lightweight, high-speed configuration.</p>
-                                    </div>
-                                    <div class="col-6 col-12-small">
-                                        <span class="image fit"><img src="images/CustomMotor.JPG" alt="Custom Thrusters" /></span>
-                                        <h4>Custom Thrusters</h4>
-                                        <p>Developed efficient, high-powered thrusters to reduce the power consumption, reduce the price (from $200 down to $20), and increase maneuverability.</p>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-6 col-12-small">
-                                        <span class="image fit"><img src="images/GenArm.jpg" alt="Generative Design Robotic Arm" /></span>
-                                        <h4>Generative Design Robotic Arm</h4>
-                                        <p>Optimized using generative design principles, reducing weight while maintaining strength.</p>
-                                    </div>
-                                    <div class="col-6 col-12-small">
-                                        <!-- <span class="image fit"><img src="images/UROV_electronics.jpg" alt="Electronics and Control Systems" /></span> -->
-                                        <h4>Electronics & Systems Integration</h4>
-                                        <p>Supervised system-wide electronics, including motor control, power management, and waterproofing.  The UROV is powered by an onboard Raspberry Pi, a custom tether interface enabling high-speed, two-way communication, and operated via an Xbox controller.  A Pixhawk controller onboard runs ArduSub to provide auto leveling for enhanced stability.</p>
-                                    </div>
-                                </div>
-
-                                <hr />
-
-                               
-
-                        
-
-                            </section>
-
-                    </div>
-
-            </div>
-
-            <footer id="footer">
-            </footer>
-
-        <!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
-
-    </body>
+</body>
 </html>

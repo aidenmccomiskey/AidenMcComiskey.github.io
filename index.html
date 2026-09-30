@@ -1,145 +1,115 @@
-<!DOCTYPE HTML>
-<!--
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Aiden McComiskey's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Aiden McComiskey — Machine Learning Engineer</title>
+	<meta name="description" content="Aiden McComiskey, machine learning engineer. MSc Applied Machine Learning, Imperial College London." />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Aiden McComiskey Portfolio</h1>
-						<p>MSc Applied Machine Learning student at Imperial College London, with a B.S. in Computer Science and Biomedical Engineering from Tufts. Most recently an ML Engineering intern on CoreWeave's Applied Training team, working on LLM quantization and distributed reinforcement learning. Before that, machine learning engineer at EasyCoach. Also experienced in full-stack web development, Fusion 360, 3D printing, and product development. <a href="https://github.com/AanAillen">@AanAillen</a></p>
-					</div>
-
-				<!-- Header -->
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Project Overviews</a></li>
-							<li><a href="CoreWeave.html">CoreWeave</a></li>
-							<li><a href="EasyCoach.html">EasyCoach</a></li>
-							<li><a href="CV4.html">CV4 Page</a></li>
-							<li><a href="BCI.html">	 BCI Research</a></li>
-							<li><a href="UROV.html"> Underwater ROV</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">May &ndash; September 2026</span>
-									<h2><a href="CoreWeave.html">CoreWeave<br />
-									ML Engineering Intern</a></h2>
-								</header>
-									<h4>Project Description:</h4> <p>CoreWeave is an AI cloud provider running large-scale GPU infrastructure. On the Applied Training team I quantized a 27B-parameter language model (Qwen3.8) from BF16 to NVFP4, making it <strong>1.79&times; smaller</strong> with <strong>1.53&times; higher inference throughput</strong> and no detectable quality regression, and it was queued to replace the FP8 model in production serving. I also trained a humanoid robot to run with PPO, scaling it from a laptop to a GPU cluster with distributed rollouts on CoreWeave's Sandboxes, and worked on the company's evaluation API. The internship was extended at the team's request.</p>
-								<ul class="actions special">
-									<li><a href="CoreWeave.html" class="button large">Project Details</a></li>
-								</ul>
-							</article>
-
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="EasyCoach.html">EasyCoach<br />
-									Machine Learning Engineer</a></h2>
-								</header>
-									<h4>Project Description:</h4> <p>EasyCoach is a soccer coaching platform used by professional and amateur clubs worldwide, including Villarreal CF. As Machine Learning Engineer I led the design and rollout of the platform's AI features, including AI drill search, AI Autofill, AI Diagram generation, and a machine-learning drill-categorization system now used by 150+ teams. I also built the PostgreSQL vector database and production infrastructure that back those features.</p>
-								<ul class="actions special">
-									<li><a href="EasyCoach.html" class="button large">Project Details</a></li>
-								</ul>
-							</article>
-
-
-							<article class="post featured">
-								<header class="major">
-									<span class="date">Current Project</span>
-									<h2><a href="CV4.html">Craniosacral Therapy Device Development<br />
-									CV4 </a></h2>
-								</header>
-									<h4>Project Description:</h4> <p>Designed in Fusion 360 and brought to life with 3D-printed
-										prototypes, this device is now entering commercial production. This device provides a
-										practical solution for delivering CV4 therapy, a technique traditionally requiring a highly
-										skilled therapist, through a user-friendly and innovative machine.<br /> Unfortunately, I cannot yet display any images of this product as per my contract with Jorge Fernandez.  Once the device enters commercial production, I will upload images!</p>
-
-								<!-- <a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a> -->
-								<ul class="actions special">
-									<li><a href="CV4.html" class="button large">Project Details</a></li>
-								</ul>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2>Dual Telescope Mounting Plate<br /></h2>
-									</header>
-									<a  class="image fit"><img src="images/DvTl.png" alt="" /></a>
-									<p>An astrophotographer approached me to design a custom aluminum mounting plate to hold two telescopes simultaneously. Using Fusion 360, I created a durable and precise solution that allows both telescopes to attach securely to his mount, enabling simultaneous astrophotography with both instruments. </p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
-									</ul> -->
-								</article>
-								<article>
-									<header>
-										<h2><a href="BCI.html">Transformer Model for a<br />
-										Brain Computer Interface (BCI)</a></h2>
-									</header>
-									<p>Working with data provided by Professor Joseph Makin from Purdue University,
-										I worked on improving BCIs that restored communication to patients who had a disease or an accident.
-										Applying a Transformer model to the data rather than the previously used RNN proved vey succesful,
-										allowing me to decrease the training time <strong> from 8 hours to 15 minutes </strong>while maintaining
-										roughly the same accuracy <b>(95%)</b>.  This change allowed the BCI to be trained on the patients as
-										they are using it, enabling live-personalisation of the translator.  I submitted this research to the
-										Regeneron WESEF Science Fair, and earned second in Computation Biology.</p>
-									<ul class="actions special">
-										<li><a href="BCI.html" class="button">Project Details</a></li>
-									</ul>
-								</article>
-
-
-							</section>
-
-							<article class="post featured">
-								<header>
-									<h2><a href="UROV.html">Underwater Remotely Operated Vehicle (ROV)
-									</a></h2>
-								</header>
-
-								<a  class="image fit"><img src="images/Poster.png" alt="" /></a>
-								From a middle-school club, to competing at World Championships, this project has been an amazing experience.  As the team lead, I managed a group of 6 people, coordinating mechanical, electrical, and software development while ensuring we met competition deadlines.  Additionally, I designed custom thrusters, a robotic arm via generative design, and 3D-printed the frame.  </p>
-								<ul class="actions special">
-									<li><a href="UROV.html" class="button">Project Details</a></li>
-								</ul>
-							</article>
-					</div>
-
-
+	<header class="site-header">
+		<div class="wrap">
+			<div class="top">
+				<a class="site-name" href="index.html">Aiden McComiskey</a>
+				<div class="site-contact">
+					<a href="mailto:aidenjmccomiskey@gmail.com">Email</a>
+					<a href="https://github.com/AanAillen">GitHub</a>
+				</div>
 			</div>
-			<footer id="footer">
+			<nav class="tabs" aria-label="Pages">
+				<a href="index.html" aria-current="page">Overview</a>
+				<a href="CoreWeave.html">CoreWeave</a>
+				<a href="EasyCoach.html">EasyCoach</a>
+				<a href="CV4.html">CV4 Device</a>
+				<a href="BCI.html">BCI Research</a>
+				<a href="UROV.html">Underwater ROV</a>
+				<a href="Telescope.html">Telescope Plate</a>
+			</nav>
+		</div>
+	</header>
 
-			</footer>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<main>
+		<div class="wrap">
+			<section class="intro">
+				<h1>Aiden McComiskey</h1>
+				<p>Machine learning engineer. MSc Applied Machine Learning student at Imperial College London, with a B.S. in Computer Science and Biomedical Engineering from Tufts. Previously on CoreWeave&rsquo;s Applied Training team and machine learning engineer at EasyCoach.</p>
+			</section>
 
-	</body>
+			<section class="block">
+				<h2>Experience</h2>
+			<div class="entry">
+				<div class="entry-head">
+					<h3><a href="CoreWeave.html">CoreWeave</a></h3>
+					<span class="dates">May &ndash; Sep 2026</span>
+				</div>
+				<p class="role">ML Engineering Intern, Applied Training</p>
+				<p>Quantized a 27B-parameter language model (Qwen3.8) from BF16 to NVFP4: 1.79&times; smaller, higher inference throughput, no detectable quality regression, and queued for production. Trained a humanoid robot to run with PPO, scaling from a laptop to a GPU cluster with rollouts on CoreWeave&rsquo;s Sandboxes, including 64 rollouts that each safely ran their own LLM-generated code.</p>
+				<a class="more" href="CoreWeave.html">Read more &rarr;</a>
+			</div>
+			<div class="entry">
+				<div class="entry-head">
+					<h3><a href="EasyCoach.html">EasyCoach</a></h3>
+					<span class="dates">May 2025 &ndash; May 2026</span>
+				</div>
+				<p class="role">Machine Learning Engineer</p>
+				<p>Led the AI features of a soccer coaching platform used by clubs including Villarreal CF: hybrid AI drill search across 418 club databases, AI Autofill, AI Diagram generation, and a drill-categorization system used by 150+ teams. Built the PostgreSQL vector database and ran the production deploys behind them.</p>
+				<a class="more" href="EasyCoach.html">Read more &rarr;</a>
+			</div>
+			</section>
+
+			<section class="block">
+				<h2>Projects</h2>
+				<div class="grid">
+				<a class="item" href="CV4.html">
+					<span class="meta">Ongoing &middot; Medical device</span>
+					<h3>CV4 craniosacral therapy device</h3>
+					<p>A machine that delivers CV4 therapy, a technique that normally needs a highly skilled therapist. Built with manual therapist Jorge Fernandez; working units are in use today.</p>
+					<span class="more">Read more &rarr;</span>
+				</a>
+				<a class="item" href="BCI.html">
+					<span class="meta">2021 &ndash; 2023 &middot; Research</span>
+					<h3>Transformer model for a brain-computer interface</h3>
+					<p>Decoded ECoG neural signals into text with a transformer, reaching 95.5% accuracy and cutting training from 8 hours to 15 minutes. Silver medal, Regeneron WESEF.</p>
+					<span class="more">Read more &rarr;</span>
+				</a>
+				<a class="item" href="UROV.html">
+					<span class="meta">2017 &ndash; 2023 &middot; Robotics</span>
+					<h3>Underwater ROV</h3>
+					<p>Led a six-person team from a no-budget school club to the MATE World Championships. Designed the 3D-printed frame, custom thrusters and robotic arm.</p>
+					<span class="more">Read more &rarr;</span>
+				</a>
+				<a class="item" href="Telescope.html">
+					<span class="meta">2024 &middot; Mechanical design</span>
+					<h3>Dual telescope mounting plate</h3>
+					<p>A custom aluminium plate, designed in Fusion 360 for an astrophotographer, that carries two telescopes on one mount.</p>
+					<span class="more">Read more &rarr;</span>
+				</a>
+				</div>
+			</section>
+
+			<section class="block">
+				<h2>Background</h2>
+				<dl class="facts">
+					<div><dt>Education</dt><dd>MSc Applied Machine Learning, Imperial College London (2026&ndash;27)<br />B.S. Computer Science &amp; Biomedical Engineering, Tufts University (2022&ndash;26), GPA 3.7</dd></div>
+					<div><dt>Languages</dt><dd>English, French, Spanish (fluent); Chinese (proficient)</dd></div>
+					<div><dt>Work rights</dt><dd>Irish citizen: full UK and EU work rights, no sponsorship needed</dd></div>
+					<div><dt>Other</dt><dd>&Eacute;p&eacute;e fencer, Irish Men&rsquo;s National Team &middot; Co-founder, Tufts AI Society</dd></div>
+				</dl>
+			</section>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="wrap">
+			<span>&copy; 2026 Aiden McComiskey</span>
+			<a href="mailto:aidenjmccomiskey@gmail.com">aidenjmccomiskey@gmail.com</a>
+		</div>
+	</footer>
+
+</body>
 </html>

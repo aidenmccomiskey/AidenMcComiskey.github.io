@@ -1,101 +1,91 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Elements Reference</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>BCI Research — Aiden McComiskey</title>
+	<meta name="description" content="Transformer model decoding ECoG neural signals to text. Research with Prof. Joseph Makin, Purdue." />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header">
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Project Overviews</a></li>
-							<li><a href="CoreWeave.html">CoreWeave</a></li>
-							<li><a href="EasyCoach.html">EasyCoach</a></li>
-							<li><a href="CV4.html">CV4 Page</a></li>
-							<li class="active"><a href="BCI.html">BCI Research</a></li>
-							<li><a href="UROV.html"> Underwater ROV</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h1>Transformer Model </b> BCI for Communucation</h1>
-								</header>
-
-								<!-- Text stuff -->
-								 	<hr />
-									<h2>Inspiration</h2>
-									<p>When I was 12 years old, my uncle was diagonsed with Huntington's disease.  I watched him deal with the disease as it progressed;
-										as he slowly lost his ability to move and eventually to communicate.  He tried to get access to a BCI in order to help restore his 
-										communication skills, but unfortunately wasn't able to do so.  That really inspired me to 
-										look into the field and try to help advance a field that can have such an immense impact
-										on people's quality of life.  
-									</p>
-									<hr />
-									<h2>Research Overview</h2>
-									<p>Brain-computer interfaces (BCIs) have transformed how we approach communication for 
-										individuals with physical impairments. My research focused on leveraging transformer 
-										models, originally designed for natural language processing, to decode 
-										electrocorticogram (ECoG) signals into coherent text with a test accuracy of
-										 95.5% in just 15 minutes of training.</p>
-									<hr />
-										<h2>Key Highlights</h2>
-										<ol>
-											<li><h5>High Accuracy with Limited Data</h5> Developed a transformer-based model capable of achieving a test accuracy of 95.5% on sentence decoding tasks. This performance rivals state-of-the-art approaches while requiring significantly less training data. </li>
-											<li><h5> Enhanced Computing Effeciency</h5> Optimized the model to complete training in just 15 minutes and 25 epochs, demonstrating a 94% reduction in training time compared to traditional recurrent neural network (RNN) methods</li>
-											<li><h5>Treated Neural Signals as a Human Language</h5> The reason I decided to use a transformer model was because we made the presumption that neural signals are fundamentally similar to human languages.  Using the unique capabilites of transformer architectures, we were able to analyze the ECoG signals as sequential data and did indeed demonstrate a fundamental similarity between neural signals and human language strucutre.</li>
-										</ol>
-										
-									<hr />
-										
-								<!-- Lists -->
-									<h2>Impact and Applications</h2>
-									This research opens doors to creating faster, more efficient BCIs for individuals with conditions like ALS, Huntington's disease, or severe paralysis. By translating thoughts into words, these systems can restore a vital aspect of human interaction—communication.
-									<ul class="actions">
-										<li><a href="https://drive.google.com/file/d/18fvQPgKlNnCjm6hLP7cpRO7jWf8oB6cc/view?usp=sharing" class="button.fit">View Paper</a></li>
-									</ul> 
-
-								
-									<hr />
-
-
-
-							</section>
-
-					</div>
-
+	<header class="site-header">
+		<div class="wrap">
+			<div class="top">
+				<a class="site-name" href="index.html">Aiden McComiskey</a>
+				<div class="site-contact">
+					<a href="mailto:aidenjmccomiskey@gmail.com">Email</a>
+					<a href="https://github.com/AanAillen">GitHub</a>
+				</div>
 			</div>
-			<footer id="footer">
-				
-			</footer>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<nav class="tabs" aria-label="Pages">
+				<a href="index.html">Overview</a>
+				<a href="CoreWeave.html">CoreWeave</a>
+				<a href="EasyCoach.html">EasyCoach</a>
+				<a href="CV4.html">CV4 Device</a>
+				<a href="BCI.html" aria-current="page">BCI Research</a>
+				<a href="UROV.html">Underwater ROV</a>
+				<a href="Telescope.html">Telescope Plate</a>
+			</nav>
+		</div>
+	</header>
 
-	</body>
+	<main>
+		<div class="wrap">
+			<section class="page-title">
+				<h1>Transformer model for a brain-computer interface</h1>
+				<p class="sub">Decoding electrocorticogram (ECoG) signals into text, fast enough to personalise the model while a patient uses it.</p>
+			</section>
+
+			<dl class="summary">
+				<div><dt>Advisor</dt><dd>Prof. Joseph G. Makin, Purdue</dd></div>
+				<div><dt>Dates</dt><dd>2021 &ndash; 2023</dd></div>
+				<div><dt>Result</dt><dd>95.5% test accuracy</dd></div>
+				<div><dt>Award</dt><dd>Silver, Computational Biology, Regeneron WESEF</dd></div>
+			</dl>
+
+			<article class="article">
+				<section>
+					<h2>Motivation</h2>
+					<p>When I was 12, my uncle was diagnosed with Huntington&rsquo;s disease. I watched him gradually lose the ability to move and eventually to communicate. He tried to get access to a BCI to restore his communication but wasn&rsquo;t able to. That is what drew me to the field.</p>
+				</section>
+
+				<section>
+					<h2>Research</h2>
+					<p>Working with data provided by Professor Joseph Makin, I replaced the recurrent neural network previously used to decode ECoG signals with a transformer model, originally designed for natural language processing.</p>
+				</section>
+
+				<section>
+					<h2>Results</h2>
+					<ul class="list">
+						<li><h3>Accuracy</h3><p>95.5% test accuracy on sentence decoding, comparable to state-of-the-art approaches while needing significantly less training data.</p></li>
+						<li><h3>Training time</h3><p>15 minutes and 25 epochs instead of 8 hours, 32&times; faster. That makes it practical to train the decoder on a patient while they are using it.</p></li>
+						<li><h3>Neural signals as language</h3><p>The premise was that neural signals share structure with human language. Treating ECoG as sequential data for a transformer supported that in practice.</p></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Impact</h2>
+					<p>Faster, more efficient BCIs could restore communication for people with ALS, Huntington&rsquo;s disease, or severe paralysis. The work won the silver medal in Computational Biology at the Regeneron Westchester Science and Engineering Fair.</p>
+					<p><a class="link-out" href="https://drive.google.com/file/d/18fvQPgKlNnCjm6hLP7cpRO7jWf8oB6cc/view?usp=sharing">Read the paper &rarr;</a></p>
+				</section>
+			</article>
+			<nav class="pager" aria-label="Pages">
+				<a href="CV4.html">&larr; CV4 Device</a>
+				<a href="UROV.html">Underwater ROV &rarr;</a>
+			</nav>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="wrap">
+			<span>&copy; 2026 Aiden McComiskey</span>
+			<a href="mailto:aidenjmccomiskey@gmail.com">aidenjmccomiskey@gmail.com</a>
+		</div>
+	</footer>
+
+</body>
 </html>
