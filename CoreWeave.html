@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CoreWeave</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Project Overviews</a></li>
+							<li class="active"><a href="CoreWeave.html">CoreWeave</a></li>
+							<li><a href="EasyCoach.html">EasyCoach</a></li>
+							<li><a href="CV4.html">CV4 Page</a></li>
+							<li><a href="BCI.html">BCI Research</a></li>
+							<li><a href="UROV.html"> Underwater ROV</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">May &ndash; September 2026</span>
+									<h1>CoreWeave: ML Engineering Intern</h1>
+									<p>Applied Training team &mdash; LLM quantization for production serving and distributed reinforcement learning on GPU infrastructure.</p>
+								</header>
+
+								<hr />
+								<h2>Overview</h2>
+								<p>CoreWeave is an AI cloud provider that runs large-scale GPU infrastructure for model training and inference. I joined the Applied Training team in May 2026, working on CoreWeave's internal Kubernetes and SUNK (Slurm-on-Kubernetes) platform. The internship was originally shorter; the team extended it through September 2026 so I could carry my work toward production.</p>
+
+								<hr />
+								<h2>What I Built</h2>
+								<ol>
+									<li>
+										<h5>Qwen3.8-27B: BF16 &rarr; NVFP4 Quantization</h5>
+										Quantized a 27-billion-parameter language model from BF16 to NVFP4, NVIDIA's 4-bit floating-point format for Blackwell GPUs. The result is <strong>1.79&times; smaller</strong> and delivers <strong>1.53&times; higher inference throughput</strong> at concurrency 16, with no detectable quality regression across four evaluation suites. I then worked with colleagues on the serving side to scope the evaluations needed to clear it for production. The model was queued to replace the FP8 version in production serving.
+									</li>
+									<li>
+										<h5>Humanoid Locomotion with PPO, Laptop to GPU Cluster</h5>
+										Trained a humanoid robot to run using Proximal Policy Optimization, built as a showcase for CoreWeave's new Sandboxes product. I scaled the same training setup through three architectures:
+										<ul>
+											<li>Fully local, on a laptop.</li>
+											<li>A local PPO learner with rollouts distributed across cloud Sandboxes.</li>
+											<li>The PPO learner on a GPU cluster, with rollouts still on Sandboxes.</li>
+										</ul>
+										Each step separated where the policy learns from where experience is collected, which is the pattern that lets RL training scale out.
+									</li>
+									<li>
+										<h5>Evals API</h5>
+										Ran a second workstream triaging and fixing GitHub issues on CoreWeave's evaluation API, the service used to measure model quality.
+									</li>
+									<li>
+										<h5>Platform Tooling</h5>
+										Contributed bug fixes and documentation corrections to internal cluster tooling while onboarding onto Kubernetes and SUNK.
+									</li>
+								</ol>
+
+								<hr />
+								<h2>Stack</h2>
+								<p>Python, Kubernetes, SUNK (Slurm-on-Kubernetes), NVIDIA GPU clusters, NVFP4 / FP8 quantization, LLM inference serving and evaluation, PPO, CoreWeave Sandboxes.</p>
+
+								<hr />
+								<h2>Links</h2>
+								<ul class="actions">
+									<li><a href="https://www.coreweave.com/" class="button">Visit CoreWeave</a></li>
+								</ul>
+
+								<hr />
+
+							</section>
+
+					</div>
+
+			</div>
+			<footer id="footer">
+
+			</footer>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
